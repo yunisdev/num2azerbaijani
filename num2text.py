@@ -22,7 +22,12 @@ numsDict = {
     "xxx": "milyard",
     "xxxx": "trilyon",
     "xxxxx": "kvartilyon",
-    "xxxxxx": "kvintilyon"
+    "xxxxxx": "kvintilyon",
+    "xxxxxxx": "sekstilyon",
+    "xxxxxxxx": "septilyon",
+    "xxxxxxxxx": "oktilyon",
+    "xxxxxxxxxx": "nonilyon",
+    "xxxxxxxxxxx": "desilyon"
 }
 
 
