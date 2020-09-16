@@ -22,7 +22,7 @@ numsDict = {
     "xxx": "milyard",
     "xxxx": "trilyon",
     "xxxxx": "kvartilyon",
-    "xxxxx": "kvintilyon"
+    "xxxxxx": "kvintilyon"
 }
 
 
@@ -75,10 +75,11 @@ def convert(num):
     result = ""
     for i in range(len(cl)):
         if (len(cl)-1-i) > 0:
-            if cl[i] == 'bir' and (len(cl)-1-i) == 1:
-                result += numsDict.get('x'*(len(cl)-1-i)) + " "
-            else:
-                result += cl[i] + " " + numsDict.get('x'*(len(cl)-1-i)) + " "
+            if not cl[i]=="":
+                if cl[i] == 'bir' and (len(cl)-1-i) == 1:
+                    result += numsDict.get('x'*(len(cl)-1-i)) + " "
+                else:
+                    result += cl[i] + " " + numsDict.get('x'*(len(cl)-1-i)) + " "
         else:
             result += cl[i] + " "
     return result
