@@ -1,34 +1,4 @@
-numsDict = {
-    "1": "bir",
-    "2": "iki",
-    "3": "üç",
-    "4": "dörd",
-    "5": "beş",
-    "6": "altı",
-    "7": "yeddi",
-    "8": "səkkiz",
-    "9": "doqquz",
-    "10": "on",
-    "20": "iyirmi",
-    "30": "otuz",
-    "40": "qırx",
-    "50": "əlli",
-    "60": "altmış",
-    "70": "yetmiş",
-    "80": "səksən",
-    "90": "doxsan",
-    "x": "min",
-    "xx": "milyon",
-    "xxx": "milyard",
-    "xxxx": "trilyon",
-    "xxxxx": "kvartilyon",
-    "xxxxxx": "kvintilyon",
-    "xxxxxxx": "sekstilyon",
-    "xxxxxxxx": "septilyon",
-    "xxxxxxxxx": "oktilyon",
-    "xxxxxxxxxx": "nonilyon",
-    "xxxxxxxxxxx": "desilyon"
-}
+from .nums import numsDict
 
 
 def getLadder(num):
@@ -80,11 +50,12 @@ def convert(num):
     result = ""
     for i in range(len(cl)):
         if (len(cl)-1-i) > 0:
-            if not cl[i]=="":
+            if not cl[i] == "":
                 if cl[i] == 'bir' and (len(cl)-1-i) == 1:
                     result += numsDict.get('x'*(len(cl)-1-i)) + " "
                 else:
-                    result += cl[i] + " " + numsDict.get('x'*(len(cl)-1-i)) + " "
+                    result += cl[i] + " " + \
+                        numsDict.get('x'*(len(cl)-1-i)) + " "
         else:
             result += cl[i] + " "
     return result

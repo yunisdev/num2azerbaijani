@@ -1,0 +1,8 @@
+README.md
+setup.py
+num2azerbaijani/__init__.py
+num2azerbaijani/nums.py
+num2azerbaijani.egg-info/PKG-INFO
+num2azerbaijani.egg-info/SOURCES.txt
+num2azerbaijani.egg-info/dependency_links.txt
+num2azerbaijani.egg-info/top_level.txt
