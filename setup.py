@@ -5,7 +5,7 @@ with open("README.md","r") as fh:
 
 setuptools.setup(
     name="num2azerbaijani",
-    version="0.0.2",
+    version="0.0.3",
     author="Yunis Huseynzade",
     author_email="yunisdev.04@gmail.com",
     description="Convert integers into Azerbaijani string",

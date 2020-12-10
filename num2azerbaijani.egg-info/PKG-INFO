@@ -1,12 +1,29 @@
 Metadata-Version: 2.1
 Name: num2azerbaijani
-Version: 0.0.2
+Version: 0.0.3
 Summary: Convert integers into Azerbaijani string
 Home-page: https://github.com/YunisDEV/num2azerbaijani
 Author: Yunis Huseynzade
 Author-email: yunisdev.04@gmail.com
 License: UNKNOWN
-Description: UNKNOWN
+Description: # num2azerbaijani
+        Lightweight python package to convert numbers into azerbaijani string
+        
+        ## Installation
+        ```bash
+        pip install num2azerbaijani
+        ```
+        
+        ## Usage
+        ```python
+        from num2azerbaijani import convert as num2aze # import module
+        
+        print(num2aze(1235)) 
+        # min iki yüz otuz beş
+        
+        print(num2aze('8135919')) 
+        # səkkiz milyon yüz otuz beş min doqquz yüz on doqquz
+        ```
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
