@@ -46,16 +46,20 @@ def complect_ladder(ladder):
 
 
 def convert(num):
-    cl = complect_ladder(getLadder(num))
-    result = ""
-    for i in range(len(cl)):
-        if (len(cl)-1-i) > 0:
-            if not cl[i] == "":
-                if cl[i] == 'bir' and (len(cl)-1-i) == 1:
-                    result += numsDict.get('x'*(len(cl)-1-i)) + " "
-                else:
-                    result += cl[i] + " " + \
-                        numsDict.get('x'*(len(cl)-1-i)) + " "
-        else:
-            result += cl[i] + " "
-    return result
+    try:
+        num = int(num)
+        cl = complect_ladder(getLadder(num))
+        result = ""
+        for i in range(len(cl)):
+            if (len(cl)-1-i) > 0:
+                if not cl[i] == "":
+                    if cl[i] == 'bir' and (len(cl)-1-i) == 1:
+                        result += numsDict.get('x'*(len(cl)-1-i)) + " "
+                    else:
+                        result += cl[i] + " " + \
+                            numsDict.get('x'*(len(cl)-1-i)) + " "
+            else:
+                result += cl[i] + " "
+        return result
+    except ValueError:
+        raise ValueError('Please enter valid integer')
