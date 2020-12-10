@@ -1,3 +1,0 @@
-from num2azerbaijani import convert
-
-print(convert(999999999999999999999999999999999999))
